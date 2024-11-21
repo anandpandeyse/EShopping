@@ -76,6 +76,7 @@ namespace Catalog.Infrastructure.Repositories
 
         async Task<IEnumerable<ProductType>> ITypesRepository.GetAllTypes()
         {
+
             return await _context
                 .Types
                 .Find(type => true)
